@@ -1,0 +1,11 @@
+{
+    "name": "crs-company/frameworc-theme",
+    "type": "october-theme",
+    "description": "Opinionated page builder for OctoberCMS",
+    "license": "MIT",
+    "require": {
+        "composer/installers": "~1.0",
+        "october/rain": "~v3.4.14",
+        "crs-company/frameworc-plugin": "~v0.1.3"
+    }
+}

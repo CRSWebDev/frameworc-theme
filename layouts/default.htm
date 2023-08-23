@@ -1,0 +1,54 @@
+[Meta]
+
+[Navigation]
+
+[Footer]
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% component 'Meta' %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    {% styles %}
+
+    {% framework turbo extras %}
+
+    <script >
+        addEventListener('page:visit', function() {
+            document.getElementById('fwc-main-content').classList.remove('isLoaded');
+        });
+
+        addEventListener('page:updated', function() {
+            setTimeout(function() {
+                document.getElementById('fwc-main-content').classList.add('isLoaded');
+            });
+        });
+
+        addEventListener('page:loaded', function() {
+            document.getElementById('fwc-main-content').classList.add('isLoaded');
+        }, { once: true });
+    </script>
+
+    {% scripts %}
+</head>
+<body class="Body--{{ record.menuStyle }}Nav">
+    <div id="fwc-main-navigation"   >
+        {% component 'Navigation' %}
+    </div>
+
+    <div id="fwc-main-content">
+        {% page %}
+    </div>
+
+    <div id="fwc-main-footer">
+        {% component 'Footer' %}
+    </div>
+</body>
+</html>
