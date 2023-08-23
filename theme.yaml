@@ -1,8 +1,8 @@
 name: FrameworC
-description: ''
-author: ''
-homepage: ''
-authorCode: ''
-code: ''
+description: 'Opinionated page builder theme for OctoberCMS'
+author: 'CRS a.s.'
+homepage: 'https://crs-company.cz'
+authorCode: 'CRS'
+code: 'frameworc'
 parent: ''
 database: '0'
