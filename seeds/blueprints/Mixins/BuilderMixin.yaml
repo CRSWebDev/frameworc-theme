@@ -1,0 +1,122 @@
+uuid: be670d99-6c7b-4902-aa32-173e2a9e8132
+handle: Mixins/Builder
+type: mixin
+name: Builder Mixin
+
+fields:
+    builder:
+        name: Builder
+        type: repeater
+        displayMode: builder
+        groups:
+            Header:
+                name: Hlavička stránky
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-desktop
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/Header
+
+            Section:
+                name: Sekce
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-window-maximize
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/Section
+
+            Tiles:
+                name: Dlaždice
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-th-large
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/Tiles
+
+            Slider:
+                name: Slider & Tabs
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-exchange
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/Slider
+
+            Accordion:
+                name: Akordeon
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-server
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/Accordion
+
+            Form:
+                name: Formulář
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-address-card
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/Form
+
+            Columns:
+                name: Sloupce
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-columns
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/Columns
+
+            Prefill:
+                name: Předvyplněný blok
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-cubes
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/Prefill

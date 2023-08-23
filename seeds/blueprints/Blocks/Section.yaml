@@ -1,0 +1,97 @@
+uuid: d11bd560-b714-4635-901a-14495ce464e8
+handle: Blocks/Section
+type: mixin
+name: Sekce
+
+fields:
+    content:
+        type: nestedform
+        showPanel: false
+        form:
+            tabs:
+                fields:
+                    headline:
+                        label: Nadpis
+                        tab: Obsah
+                    
+                    subheadline:
+                        label: Podnadpis
+                        tab: Obsah
+
+                    text:
+                        label: Text
+                        type: richeditor
+                        tab: Obsah
+
+                    image:
+                        label: Obrázek
+                        type: mediafinder
+                        mode: image
+                        tab: Obsah
+                        trigger:
+                            action: hide
+                            field: variant
+                            condition: value[variant3]
+
+                    embed:
+                        label: Embed prvek
+                        comment: Může být YT video, mapa nebo podobně
+                        type: codeeditor
+                        tab: Obsah
+                        trigger:
+                            action: show
+                            field: variant
+                            condition: value[variant3]
+
+                    buttons:
+                        type: mixin
+                        source: Mixins/Buttons
+                        tab: Obsah
+
+
+                    # Settings #
+
+                    variant:
+                        label: Varianta zobrazení
+                        tab: Nastavení
+                        type: dropdown
+                        default: variant1
+                        options:
+                            variant1: Varianta 1
+                            variant2: Varianta 2
+                            variant3: Varianta s embed prvkem
+
+                    reverse:
+                        label: Obrázek vlevo, text vpravo
+                        type: switch
+                        default: false
+                        tab: Nastavení
+
+                    noText:
+                        label: Pouze obrázek
+                        type: switch
+                        default: false
+                        tab: Nastavení
+
+                    noImage:
+                        label: Pouze text
+                        type: switch
+                        default: false
+                        tab: Nastavení
+
+                    accent:
+                        label: Akcentovaná barva pozadí
+                        type: switch
+                        default: false
+                        tab: Nastavení
+
+                    contrast:
+                        label: Kontrastní barva pozadí a textu
+                        type: switch
+                        default: false
+                        tab: Nastavení
+
+                    narrow:
+                        label: Zůžené zobrazení
+                        type: switch
+                        tab: Nastavení

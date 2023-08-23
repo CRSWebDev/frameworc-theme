@@ -1,0 +1,49 @@
+uuid: 41c5539c-ffbb-4e20-b0e8-55bcfab073e1
+handle: Meta
+type: single
+name: Meta & SEO
+drafts: false
+
+primaryNavigation:
+    label: Meta & SEO
+    icon: icon-google
+    order: 120
+
+fields:
+    _sectionMeta:
+        label: Meta info
+        type: section
+
+    metaTitle:
+        label: Meta titulek
+
+    favicon:
+        label: Favikonka
+        type: mediafinder
+        mode: image
+        maxItems: 1
+
+    description:
+        label: Meta popisek
+        type: textarea
+        size: small
+
+    _sectionOG:
+        label: OG Tagy
+        type: section
+
+    ogTitle:
+        label: OG Title
+        comment: Pokud je nevyplněno, použije se aktuální titulek stránky
+
+    ogDescription:
+        label: OG Description
+        comment: Pokud je nevyplněno, použije se aktuální meta popisek
+        type: textarea
+        size: small
+
+    ogImage:
+        label: OG Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

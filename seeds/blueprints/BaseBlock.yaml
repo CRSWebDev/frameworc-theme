@@ -1,0 +1,9 @@
+uuid: 5c898df3-b491-4a9e-bf9b-700a81c58a2a
+handle: BaseBlock
+type: mixin
+name: Základní nastavení
+
+fields:
+    blockId:
+        label: ID Bloku
+        comment: Používá se k identifikaci prvku na stránce a ke kotevním odkazům, mělo by být unikátní

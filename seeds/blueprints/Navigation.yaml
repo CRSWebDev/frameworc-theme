@@ -1,0 +1,42 @@
+uuid: 6a4f4175-fd60-4ac2-a429-2f0bc411f0be
+handle: Navigation
+type: single
+name: Navigace
+drafts: false
+
+navigation:
+    parent: Builder
+    icon: icon-bars
+    order: 10
+
+fields:
+    logo:
+        type: mediafinder
+        label: Logo
+        mode: image
+    nav:
+        type: repeater
+        label: Navigace
+        prompt: Přidat stránku
+        form:
+            fields:
+                label:
+                    label: Text
+                    span: left
+                link:
+                    label: Položka navigace
+                    type: pagefinder
+                    span: right
+                children:
+                    label: Podřazené položky
+                    type: repeater
+                    prompt: Přidat podřazenou stránku
+                    form:
+                        fields:
+                            label:
+                                label: Text
+                                span: left
+                            link:
+                                label: Položka navigace
+                                type: pagefinder
+                                span: right

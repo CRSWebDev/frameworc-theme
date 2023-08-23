@@ -1,0 +1,46 @@
+uuid: 9090b793-aec8-482e-94b6-8ba8b9ebecb7
+handle: Footer
+type: single
+name: Patička
+drafts: false
+
+navigation:
+    parent: Builder
+    icon: icon-download
+    order: 10
+
+fields:
+    logo:
+        type: mediafinder
+        label: Logo
+        mode: image
+    nav:
+        type: repeater
+        label: Navigace
+        prompt: Přidat stránku
+        form:
+            fields:
+                label:
+                    label: Text
+                    span: left
+                link:
+                    label: Položka navigace
+                    type: pagefinder
+                    span: right
+                children:
+                    label: Podřazené položky
+                    type: repeater
+                    prompt: Přidat podřazenou stránku
+                    form:
+                        fields:
+                            label:
+                                label: Text
+                                span: left
+                            link:
+                                label: Položka navigace
+                                type: pagefinder
+                                span: right
+
+    text:
+        label: Text na pravé straně patičky
+        type: richeditor

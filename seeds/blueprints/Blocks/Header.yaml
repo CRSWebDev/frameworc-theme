@@ -1,0 +1,48 @@
+uuid: f5321174-a020-4b8a-a848-7da2e7c6fc2d
+handle: Blocks/Header
+type: mixin
+name: Hlavička stránky
+
+fields:
+    content:
+        type: nestedform
+        showPanel: false
+        form:
+            tabs:
+                fields:
+                    headline:
+                        label: Nadpis
+                        tab: Obsah
+
+                    subheadline:
+                        label: Podnadpis
+                        tab: Obsah
+
+                    image:
+                        label: Obrázek
+                        type: mediafinder
+                        mode: image
+                        tab: Obsah
+
+                    buttons:
+                        tab: Obsah
+                        type: mixin
+                        source: Mixins/Buttons
+                    
+                    fullHeight:
+                        label: Přes celou výšku
+                        type: switch
+                        default: true
+                        tab: Nastavení
+
+                    contrast:
+                        label: Kontrastní text
+                        type: switch
+                        default: false
+                        tab: Nastavení
+
+                    overlay:
+                        label: Zatmavení pozadí
+                        type: switch
+                        default: false
+                        tab: Nastavení

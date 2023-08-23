@@ -1,0 +1,137 @@
+uuid: e901df7d-afd5-4ae2-8a72-5b24abe56f26
+handle: Form
+type: entry
+name: Formuláře
+drafts: false
+
+navigation:
+    parent: Builder
+    icon: icon-address-card
+    order: 10
+
+fields:
+    headline:
+        label: Nadpis
+
+    fwcFields:
+        label: Pole formuláře
+        type: repeater
+        titleFrom: name
+        groups:
+            text:
+                name: Textové pole
+                fields:
+                    meta:
+                        label: Základní nastavení
+                        type: mixin
+                        source: Mixins/BaseFormField
+
+            number:
+                name: Číselné pole
+                fields:
+                    meta:
+                        label: Základní nastavení
+                        type: mixin
+                        source: Mixins/BaseFormField
+
+            email:
+                name: Emailové pole
+                fields:
+                    meta:
+                        label: Základní nastavení
+                        type: mixin
+                        source: Mixins/BaseFormField
+
+            phone:
+                name: Pole pro Telefon
+                fields:
+                    meta:
+                        label: Základní nastavení
+                        type: mixin
+                        source: Mixins/BaseFormField
+
+            textarea:
+                name: Pole pro dlouhý text (textarea)
+                fields:
+                    meta:
+                        label: Základní nastavení
+                        type: mixin
+                        source: Mixins/BaseFormField
+
+            file:
+                name: Pole pro nahrávání souborů
+                fields:
+                    meta:
+                        label: Základní nastavení
+                        type: mixin
+                        source: Mixins/BaseFormField
+
+
+            select:
+                name: Roletka (select)
+                fields:
+                    meta:
+                        label: Základní nastavení
+                        type: mixin
+                        source: Mixins/BaseFormField
+                    options:
+                        label: Možnosti
+                        type: repeater
+                        form:
+                            fields:
+                                value:
+                                    label: Hodnota
+                                    span: left
+                                label:
+                                    label: Popisek
+                                    span: right
+
+            checkbox:
+                name: Checkboxy (více možností)
+                fields:
+                    meta:
+                        label: Základní nastavení
+                        type: mixin
+                        source: Mixins/BaseFormField
+                    options:
+                        label: Možnosti
+                        type: repeater
+                        form:
+                            fields:
+                                value:
+                                    label: Hodnota
+                                    span: left
+                                label:
+                                    label: Popisek
+                                    span: right
+
+            radio:
+                name: Radio (jedna možnost)
+                fields:
+                    meta:
+                        label: Základní nastavení
+                        type: mixin
+                        source: Mixins/BaseFormField
+                    options:
+                        label: Možnosti
+                        type: repeater
+                        form:
+                            fields:
+                                value:
+                                    label: Hodnota
+                                    span: left
+                                label:
+                                    label: Popisek
+                                    span: right
+
+            agreement:
+                name: Souhlas se zpracováním údajů
+                fields:
+                    meta:
+                        label: Základní nastavení
+                        type: mixin
+                        source: Mixins/BaseFormField
+
+                    text:
+                        label: Text souhlasu
+                        type: richeditor
