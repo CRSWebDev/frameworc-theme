@@ -7,3 +7,48 @@ fields:
     blockId:
         label: ID Bloku
         comment: Používá se k identifikaci prvku na stránce a ke kotevním odkazům, mělo by být unikátní
+        span: left
+
+    elevated:
+        label: Zvýrazněný blok
+        comment: Zvýraznění bloku - vysunutí nahoru do předchozího bloku
+        type: switch
+        default: 0
+        span: right
+
+    containerWidth:
+        label: Šířka zobrazení
+        comment: Šířka zobrazení bloku v rámci stránky
+        type: dropdown
+        default: default
+        span: left
+        options:
+            default: Výchozí (1200px)
+            narrow: Zůžené zobrazení (800px)
+            full: Plná šířka stránky
+            pop: Plná šířka s okrajem
+
+    backgroundColor:
+        label: Barva pozadí
+        comment: Barva pozadí bloku
+        type: dropdown
+        default: default
+        span: right
+        options:
+            default: Výchozí (průhledná)
+            accent: Akcentní barva (polotmavá)
+            contrast: Kontrastní barva (tmavá)
+            image: Obrázek
+
+    backgroundImage:
+        label: Obrázek pozadí
+        comment: Obrázek pozadí bloku
+        type: mediafinder
+        mode: image
+        maxItems: 1
+        span: left
+        dependsOn: backgroundColor
+        trigger:
+            action: show
+            field: backgroundColor
+            condition: value[image]
