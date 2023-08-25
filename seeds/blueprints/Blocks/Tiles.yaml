@@ -7,17 +7,10 @@ fields:
     content:
         type: nestedform
         showPanel: false
+        tab: Blok
         form:
             tabs:
                 fields:
-                    headline:
-                        label: Nadpis
-                        tab: Obsah
-
-                    subheadline:
-                        label: Podnadpis
-                        tab: Obsah
-
                     tiles:
                         label: Dlaždice
                         type: repeater
@@ -28,13 +21,13 @@ fields:
                             fields:
                                 headline:
                                     label: Nadpis
-                                
+
                                 image:
                                     label: Obrázek/Ikonka
                                     type: mediafinder
                                     mode: image
                                     maxItems: 1
-                                    
+
                                 text:
                                     label: Text
                                     type: richeditor

@@ -7,6 +7,7 @@ fields:
     content:
         type: nestedform
         showPanel: false
+        tab: Blok
         form:
             tabs:
                 fields:

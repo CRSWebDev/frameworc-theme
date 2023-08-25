@@ -7,12 +7,13 @@ fields:
     content:
         type: nestedform
         showPanel: false
+        tab: Blok
         form:
             tabs:
                 fields:
                     _hint:
                         type: partial
-                        path: crs.frameworc::admin.prefill_block_meta
+                        path: crscompany.frameworc::admin.prefill_block_meta
                         tab: Obsah
 
                     block:

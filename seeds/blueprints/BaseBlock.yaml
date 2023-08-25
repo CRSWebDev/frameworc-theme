@@ -7,21 +7,28 @@ fields:
     blockId:
         label: ID Bloku
         comment: Používá se k identifikaci prvku na stránce a ke kotevním odkazům, mělo by být unikátní
-        span: left
+        tab: Blok
+
+    headline:
+        label: Nadpis a text
+        comment: Pro nadpis používejte H2, pro podnadpis H3. !Pozor! U bloku "Hlavička" používejte H1 a H2.
+        type: richeditor
+        tab: Blok
+        dependsOn: blockId
 
     elevated:
         label: Zvýrazněný blok
         comment: Zvýraznění bloku - vysunutí nahoru do předchozího bloku
         type: switch
         default: 0
-        span: right
+        tab: Vzhled bloku
 
     containerWidth:
         label: Šířka zobrazení
         comment: Šířka zobrazení bloku v rámci stránky
         type: dropdown
         default: default
-        span: left
+        tab: Vzhled bloku
         options:
             default: Výchozí (1200px)
             narrow: Zůžené zobrazení (800px)
@@ -33,7 +40,7 @@ fields:
         comment: Barva pozadí bloku
         type: dropdown
         default: default
-        span: right
+        tab: Vzhled bloku
         options:
             default: Výchozí (průhledná)
             accent: Akcentní barva (polotmavá)
@@ -45,8 +52,8 @@ fields:
         comment: Obrázek pozadí bloku
         type: mediafinder
         mode: image
+        tab: Vzhled bloku
         maxItems: 1
-        span: left
         dependsOn: backgroundColor
         trigger:
             action: show

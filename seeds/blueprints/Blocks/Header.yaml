@@ -7,17 +7,10 @@ fields:
     content:
         type: nestedform
         showPanel: false
+        tab: Blok
         form:
             tabs:
                 fields:
-                    headline:
-                        label: Nadpis
-                        tab: Obsah
-
-                    subheadline:
-                        label: Podnadpis
-                        tab: Obsah
-
                     image:
                         label: Obrázek
                         type: mediafinder
@@ -28,7 +21,7 @@ fields:
                         tab: Obsah
                         type: mixin
                         source: Mixins/Buttons
-                    
+
                     fullHeight:
                         label: Přes celou výšku
                         type: switch
