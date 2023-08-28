@@ -44,3 +44,10 @@ fields:
                         label: Vždy otevřená jen jedna položka
                         type: switch
                         tab: Nastavení
+
+                    icon:
+                        label: Vlastní Ikona
+                        comment: Vložte ikonu ve formátu SVG
+                        type: codeeditor
+                        size: small
+                        tab: Nastavení

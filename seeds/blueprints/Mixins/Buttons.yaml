@@ -4,22 +4,36 @@ type: mixin
 name: Tlačítka
 
 fields:
-    buttons:
-        type: repeater
-        label: Tlačítka
-        tab: Obsah
-        form:
-            fields:
-                label:
-                    label: Text tlačítka
-                    span: left
-                link:
-                    label: Odkaz tlačítka
-                    type: pagefinder
-                    span: right
-                contrast:
-                    label: Kontrastní text
-                    type: switch
-                outline:
-                    label: Obtáhnuté tlačítko
-                    type: switch
+    _button1Section:
+        type: section
+        label: Tlačítko 1
+    buttonLabel1:
+        label: Text tlačítka
+        span: left
+    buttonLink1:
+        label: Odkaz tlačítka
+        type: pagefinder
+        span: right
+    buttonContrast1:
+        label: Kontrastní text
+        type: switch
+    buttonOutline1:
+        label: Obtáhnuté tlačítko
+        type: switch
+
+    _button2Section:
+        type: section
+        label: Tlačítko 2
+    buttonLabel2:
+        label: Text tlačítka
+        span: left
+    buttonLink2:
+        label: Odkaz tlačítka
+        type: pagefinder
+        span: right
+    buttonContrast2:
+        label: Kontrastní text
+        type: switch
+    buttonOutline2:
+        label: Obtáhnuté tlačítko
+        type: switch

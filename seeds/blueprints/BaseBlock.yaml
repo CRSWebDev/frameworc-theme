@@ -59,3 +59,9 @@ fields:
             action: show
             field: backgroundColor
             condition: value[image]
+
+    aliasOverride:
+        label: Vlastní alias
+        comment: Přepíše defaultní alias pro blok. Používá se k vytvoření extra šablony v tématu a vlastnímu stylování konkrétního bloku.
+        type: text
+        tab: Pokročilé nastavení
