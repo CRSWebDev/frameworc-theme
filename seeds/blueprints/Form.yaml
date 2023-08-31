@@ -3,6 +3,7 @@ handle: Form
 type: entry
 name: Formuláře
 drafts: false
+multisite: true
 
 navigation:
     parent: Builder
@@ -18,6 +19,13 @@ fields:
         type: repeater
         titleFrom: name
         groups:
+            section:
+                name: Sekce s textem (není pole)
+                fields:
+                    content:
+                        label: Nadpis a text sekce
+                        type: richeditor
+
             text:
                 name: Textové pole
                 fields:

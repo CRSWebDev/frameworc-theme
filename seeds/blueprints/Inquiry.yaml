@@ -20,7 +20,7 @@ fields:
     inquiry:
         label: Záznam
         type: partial
-        path: crs.frameworc::admin.form_inquiry
+        path: crscompany.frameworc::admin.form_inquiry
 
     files:
         label: Soubory

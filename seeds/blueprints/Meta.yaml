@@ -3,6 +3,7 @@ handle: Meta
 type: single
 name: Meta & SEO
 drafts: false
+multisite: true
 
 primaryNavigation:
     label: Meta & SEO
@@ -22,6 +23,15 @@ fields:
         type: mediafinder
         mode: image
         maxItems: 1
+
+    faviconHtml:
+        label: HTML pro favikonku
+        type: textarea
+
+    faviconGenerator:
+        label: Real Favicon Generator
+        type: partial
+        path: crscompany.frameworc::admin.real_favicon_generator
 
     description:
         label: Meta popisek
@@ -47,3 +57,7 @@ fields:
         type: mediafinder
         mode: image
         maxItems: 1
+
+    headerHtml:
+        label: HTML v hlavičce
+        type: codeeditor

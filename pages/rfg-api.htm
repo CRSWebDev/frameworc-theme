@@ -1,0 +1,7 @@
+url = "/api/rfg"
+
+[Meta]
+==
+{% set url = Meta.onFaviconGenerated %}
+
+{% do redirect(url) %}

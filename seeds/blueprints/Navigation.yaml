@@ -3,6 +3,7 @@ handle: Navigation
 type: single
 name: Navigace
 drafts: false
+multisite: true
 
 navigation:
     parent: Builder
