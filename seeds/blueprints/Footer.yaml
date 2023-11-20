@@ -3,7 +3,6 @@ handle: Footer
 type: single
 name: Patička
 drafts: false
-multisite: true
 
 navigation:
     parent: Builder

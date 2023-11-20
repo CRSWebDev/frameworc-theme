@@ -120,3 +120,16 @@ fields:
                     content:
                         type: mixin
                         source: Blocks/Prefill
+
+            ImageStrip:
+                name: Pruh obrázků
+                titleFrom: blockId
+                useTabs: true
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/ImageStrip

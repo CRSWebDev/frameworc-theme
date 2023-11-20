@@ -3,7 +3,6 @@ handle: Prefill
 type: entry
 name: Předvyplněné bloky
 drafts: false
-multisite: true
 
 navigation:
     parent: Builder

@@ -1,0 +1,23 @@
+uuid: 6ef738a0-fc19-493f-a928-24d47df45a8f
+handle: Blocks/ImageStrip
+type: mixin
+name: Pruh obrázků
+
+fields:
+    content:
+        type: nestedform
+        showPanel: false
+        tab: Blok
+        form:
+            tabs:
+                fields:
+                    images:
+                        label: Obrázky
+                        type: mediafinder
+                        mode: image
+                        tab: Obsah
+
+                    autoScroll:
+                        label: Automaticky posouvat
+                        type: switch
+                        tab: Nastavení

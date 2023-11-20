@@ -3,7 +3,6 @@ handle: Builder
 type: structure
 name: Stránky
 drafts: false
-multisite: true
 
 primaryNavigation:
     label: Obsah webu
