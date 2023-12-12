@@ -3,5 +3,11 @@ layout = "default"
 title = "Page"
 
 [Builder]
+
+[BlogPost]
 ==
-{% component 'Builder' %}
+{% if isBlogPost(meta) %}
+    {% component 'BlogPost' %}
+{% else %}
+    {% component 'Builder' %}
+{% endif %}

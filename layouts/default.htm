@@ -40,7 +40,14 @@
 
     {% scripts %}
 </head>
-<body class="Body--{{ record.menuStyle }}Nav">
+
+{% set menuStyle = record.menuStyle %}
+
+{% if not record.menuStyle %}
+    {% set menuStyle = 'solid' %}
+{% endif %}
+
+<body class="Body--{{ menuStyle }}Nav">
     <div id="fwc-main-navigation"   >
         {% component 'Navigation' %}
     </div>

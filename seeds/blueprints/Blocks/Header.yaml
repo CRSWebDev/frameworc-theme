@@ -28,12 +28,6 @@ fields:
                         default: true
                         tab: Nastavení
 
-                    isVideoBackground:
-                        label: Video na pozadí
-                        type: switch
-                        default: true
-                        tab: Nastavení
-
                     contrast:
                         label: Kontrastní text
                         type: switch

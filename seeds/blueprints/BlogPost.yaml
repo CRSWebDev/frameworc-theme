@@ -1,0 +1,67 @@
+uuid: 61a4129f-1bf5-4167-b6ab-e80b0c25cf08
+handle: BlogPost
+type: stream
+name: Blog
+drafts: true
+
+primaryNavigation:
+    label: Blog
+    icon: icon-align-left
+    order: 111
+
+navigation:
+    parent: BlogPost
+    label: Příspěvky
+    icon: icon-align-left
+    order: 10
+
+fields:
+    image:
+        label: Hlavní obrázek příspěvku
+        tab: Obsah
+        type: mediafinder
+        maxItems: 1
+        span: left
+        mode: image
+        imageWidth: 500
+        imageHeight: 500
+        thumbOptions:
+            width: 500
+            height: 300
+
+    tags:
+        label: Tagy
+        tab: Obsah
+        type: entries
+        displayMode: taglist
+        source: Tags
+        span: right
+
+    _tagsComment:
+        type: partial
+        tab: Obsah
+        path: crscompany.frameworc::admin.blogpost_tags_hint
+        span: right
+
+    perex:
+        label: Krátké shrnutí
+        type: textarea
+        tab: Obsah
+        comment: Zobrazuje se na výpisu článků
+        size: small
+
+    content:
+        tab: Obsah
+        label: Content
+        type: richeditor
+        size: giant
+
+    metaTitle:
+        label: Meta titulek
+        tab: Meta
+
+    metaDescription:
+        label: Meta popisek
+        tab: Meta
+        type: textarea
+        size: small

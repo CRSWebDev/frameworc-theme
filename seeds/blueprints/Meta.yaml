@@ -3,6 +3,7 @@ handle: Meta
 type: single
 name: Meta & SEO
 drafts: false
+multisite: true
 
 primaryNavigation:
     label: Meta & SEO
@@ -10,6 +11,15 @@ primaryNavigation:
     order: 120
 
 fields:
+    _sectionSettings:
+        label: Nastavení webu
+        type: section
+
+    blogBasePath:
+        label: Základ URL blogu a příspěvků
+        type: text
+        default: blog
+
     _sectionMeta:
         label: Meta info
         type: section
@@ -17,11 +27,15 @@ fields:
     metaTitle:
         label: Meta titulek
 
-    favicon:
-        label: Favikonka
-        type: mediafinder
-        mode: image
-        maxItems: 1
+    faviconHtml:
+        label: HTML pro favikonku
+        type: textarea
+        comment: Toto pole je vyplněno při generování favikony pomocí tlačítka níže. Pokud nemusíte, tak ho neupravujte
+
+    faviconGenerator:
+        label: Real Favicon Generator
+        type: partial
+        path: crscompany.frameworc::admin.real_favicon_generator
 
     description:
         label: Meta popisek
@@ -47,7 +61,3 @@ fields:
         type: mediafinder
         mode: image
         maxItems: 1
-
-    headerHtml:
-        label: HTML v hlavičce
-        type: codeeditor

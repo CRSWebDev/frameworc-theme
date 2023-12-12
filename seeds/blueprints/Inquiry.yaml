@@ -7,7 +7,7 @@ drafts: false
 primaryNavigation:
     label: Záznamy z formulářů
     icon: icon-address-card
-    order: 110
+    order: 112
 
 fields:
     form:

@@ -65,6 +65,20 @@ fields:
                         type: mixin
                         source: Blocks/Slider
 
+            ImageStrip:
+                name: Pruh obrázků
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-image
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/ImageStrip
+
             Accordion:
                 name: Akordeon
                 titleFrom: blockId
@@ -121,10 +135,11 @@ fields:
                         type: mixin
                         source: Blocks/Prefill
 
-            ImageStrip:
-                name: Pruh obrázků
+            BlogList:
+                name: Seznam příspěvků
                 titleFrom: blockId
                 useTabs: true
+                icon: icon-align-left
                 fields:
                     base:
                         type: mixin
@@ -132,4 +147,4 @@ fields:
 
                     content:
                         type: mixin
-                        source: Blocks/ImageStrip
+                        source: Blocks/BlogList
