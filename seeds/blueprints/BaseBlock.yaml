@@ -6,7 +6,7 @@ name: Základní nastavení
 fields:
     blockId:
         label: ID Bloku
-        comment: Používá se k identifikaci prvku na stránce a ke kotevním odkazům, mělo by být unikátní
+        comment: Používá se k identifikaci prvku na stránce a ke kotevním odkazům, mělo by být unikátní a deskriptivní "o-nas" nebo "kontaktni-formular"
         tab: Blok
 
     headline:
@@ -60,8 +60,14 @@ fields:
             field: backgroundColor
             condition: value[image]
 
+    customCssClass:
+        label: Vlastní CSS třída
+        comment: Můžete zadat více tříd oddělených mezerou. Použije se pro vlastní stylování bloku. Pokud potřebujete vytvořit vlastní šablonu pro blok, použijte alias pro blok.
+        type: text
+        tab: Pokročilé nastavení
+
     aliasOverride:
         label: Vlastní alias
-        comment: Přepíše defaultní alias pro blok. Používá se k vytvoření extra šablony v tématu a vlastnímu stylování konkrétního bloku.
+        comment: Přepíše defaultní alias pro blok. Používá se k vytvoření extra šablony v tématu a vlastnímu stylování konkrétního bloku. Pokud nevíte, co "alias pro blok" znamená, nechte prázdné.
         type: text
         tab: Pokročilé nastavení
