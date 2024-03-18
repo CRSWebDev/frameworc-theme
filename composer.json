@@ -7,6 +7,6 @@
         "composer/installers": "~1.0",
         "october/rain": "~v3.5",
         "crs-company/frameworc-plugin": "~v1.0.6",
-        "crscompany/tailordataexport-plugin": "^v1.0.2"
+        "crs-company/tailordataexport-plugin": "^v1.0.2"
     }
 }
