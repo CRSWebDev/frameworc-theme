@@ -1,0 +1,29 @@
+uuid: 37b361f7-7758-440f-8cb2-e71fb82e6ea9
+handle: Menu
+type: entry
+name: Menus
+drafts: false
+multisite: true
+
+navigation:
+    parent: Builder
+    icon: icon-bars
+    order: 10
+
+fields:
+    navigation:
+        type: nesteditems
+        label: Navigace
+        maxDepth: 2
+        span: adaptive
+        form:
+            fields:
+                title:
+                    label: Title
+                    type: text
+                url:
+                    label: Položka navigace
+                    type: pagefinder
+                blank:
+                    label: Otevřít v novém okně
+                    type: switch

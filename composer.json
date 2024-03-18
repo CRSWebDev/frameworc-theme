@@ -6,6 +6,6 @@
     "require": {
         "composer/installers": "~1.0",
         "october/rain": "~v3.5",
-        "crs-company/frameworc-plugin": "~v1.0.4"
+        "crs-company/frameworc-plugin": "~v1.0.5"
     }
 }

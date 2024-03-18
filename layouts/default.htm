@@ -41,6 +41,8 @@
     </script>
 
     {% scripts %}
+
+    {{ meta.headerHtml | raw }}
 </head>
 
 {% set menuStyle = record.menuStyle %}
@@ -61,5 +63,7 @@
     <div id="fwc-main-footer">
         {% component 'Footer' %}
     </div>
+
+    <div id="turbo-consent" data-turbo-permanent></div>
 </body>
 </html>

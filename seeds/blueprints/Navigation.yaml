@@ -16,28 +16,7 @@ fields:
         label: Logo
         mode: image
     nav:
-        type: repeater
+        type: entries
         label: Navigace
-        prompt: Přidat stránku
-        form:
-            fields:
-                label:
-                    label: Text
-                    span: left
-                link:
-                    label: Položka navigace
-                    type: pagefinder
-                    span: right
-                children:
-                    label: Podřazené položky
-                    type: repeater
-                    prompt: Přidat podřazenou stránku
-                    form:
-                        fields:
-                            label:
-                                label: Text
-                                span: left
-                            link:
-                                label: Položka navigace
-                                type: pagefinder
-                                span: right
+        maxItems: 1
+        source: Menu
