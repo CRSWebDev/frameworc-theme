@@ -1,0 +1,26 @@
+{
+    "form.thank_you": "Děkujeme za vyplnění formuláře. Budeme Vás kontaktovat co nejdříve.",
+    "form.field_is_required": "Toto pole je povinné",
+    "form.enter_valid_email": "Zadejte platný e-mail",
+    "form.email_header": "Nová zpráva z webu",
+    "form.email_footer": "Jestli vám email došel omylem, neodpovídejte na něj.",
+    "form.email_backend_subject": "Nová zpráva z webu",
+    "form.email_client_subject": "Děkujeme za vyplnění formuláře",
+    "form.email_thank_you": "Děkujeme za vyplnění formuláře",
+
+    "form.captcha.ariaLinkLabel": "Používáme Altcha pro ochranu proti spamu.",
+    "form.captcha.error": "Chyba při ověřování captcha. Zkuste to prosím znovu.",
+    "form.captcha.expired": "Platnost ověření vypršela. Zkuste to prosím znovu.",
+    "form.captcha.footer": "Používáme Altcha pro ochranu proti spamu.",
+    "form.captcha.label": "Nejsem robot",
+    "form.captcha.verified": "Ověření proti spamu proběhlo úspěšně.",
+    "form.captcha.verifying": "Ověřuji...",
+    "form.captcha.waitAlert": "Počkejte prosím, dokud se ověření neprovede.",
+
+    "blog.load_more": "Načíst další",
+    "blog.read_more": "Číst dále",
+    "blog.all_categories": "Všechny",
+    "blog.no_posts": "Nic jsme nenašli",
+    "blog.downloads_headline": "Soubory ke stažení",
+    "blog.gallery_headline": "Galerie"
+}

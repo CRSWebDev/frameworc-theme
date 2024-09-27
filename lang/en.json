@@ -1,0 +1,26 @@
+{
+    "form.thank_you": "Thank you for your response. We will contact you as soon as possible.",
+    "form.field_is_required": "This field is required",
+    "form.enter_valid_email": "Enter a valid email",
+    "form.email_header": "New message from website",
+    "form.email_footer": "If you received this email by mistake, do not reply to it.",
+    "form.email_backend_subject": "New message from website",
+    "form.email_client_subject": "Thank you for your response",
+    "form.email_thank_you": "Thank you for your response",
+
+    "form.captcha.ariaLinkLabel": "We use Altcha to protect against spam.",
+    "form.captcha.error": "Verification failed. Please try again.",
+    "form.captcha.expired": "Verification expired. Please try again.",
+    "form.captcha.footer": "We use Altcha to protect against spam.",
+    "form.captcha.label": "I'm not a robot",
+    "form.captcha.verified": "Verified successfully.",
+    "form.captcha.verifying": "Verifying...",
+    "form.captcha.waitAlert": "Please wait for the verification to complete.",
+
+    "blog.load_more": "Load more",
+    "blog.read_more": "Read more",
+    "blog.all_categories": "All",
+    "blog.no_posts": "No posts found",
+    "blog.downloads_headline": "Downloads",
+    "blog.gallery_headline": "Gallery"
+}
