@@ -14,23 +14,33 @@ fields:
                     _description:
                         type: hint
                         label: Tento blok zobrazuje výpis článků ze sekce Blog
-
-                    perPage:
-                        label: Počet příspěvků na stránku
-                        type: number
-                        min: 1
-                    
-                    pagination:
-                        label: Stránkování
-                        type: switch
+                        tab: Nastavení
+                        span: left
 
                     count:
                         label: Počet příspěvků v řádku
-                        tab: Nastavení
                         type: dropdown
+                        tab: Nastavení
+                        span: right
                         default: 3
                         options:
                             1: 1
                             2: 2
                             3: 3
                             4: 4
+
+                    perPage:
+                        label: Počet příspěvků na stránku
+                        type: number
+                        min: 1
+                        tab: Nastavení
+                    
+                    pagination:
+                        label: Stránkování
+                        type: switch
+                        tab: Nastavení
+
+                    categorySwitcher:
+                        label: Menu kategorií
+                        type: switch
+                        tab: Nastavení

@@ -6,13 +6,13 @@ drafts: true
 
 primaryNavigation:
     label: Blog
-    icon: icon-align-left
+    icon: icon-text-bold
     order: 111
 
 navigation:
     parent: BlogPost
     label: Příspěvky
-    icon: icon-align-left
+    icon: icon-text-bold
     order: 10
 
 fields:
@@ -33,9 +33,10 @@ fields:
         label: Tagy
         tab: Obsah
         type: entries
-        displayMode: taglist
+        displayMode: controller
         source: Tags
         span: right
+        toolbarButtons: create|add|remove
 
     _tagsComment:
         type: partial
@@ -52,7 +53,7 @@ fields:
 
     content:
         tab: Obsah
-        label: Content
+        label: Textový obsah
         type: richeditor
         size: giant
 
@@ -65,3 +66,54 @@ fields:
         tab: Meta
         type: textarea
         size: small
+
+    gallery:
+        type: nestedform
+        showPanel: false
+        tab: Galerie
+        form:
+            fields:
+                images:
+                    label: Obrázky
+                    type: mediafinder
+                    mode: image
+
+                columns:
+                    label: Počet sloupců
+                    type: number
+                    default: 3
+                    comment: Pokud je prázdné, je výchozí hodnota "3"
+
+    downloads:
+        type: nestedform
+        showPanel: false
+        tab: Soubory ke stažení
+        form:
+            fields:
+                files:
+                    label: Soubory
+                    type: repeater
+                    form:
+                        fields:
+                            name:
+                                label: Název
+                                span: left
+
+                            icon:
+                                label: Ikonka
+                                type: dropdown
+                                span: right
+                                options:
+                                    none: Žádná
+                                    file: Soubor
+                                    pdf: PDF
+                                    dl: Download (šipka dolů)
+
+                            description:
+                                label: Popisek
+                                type: richeditor
+                            
+                            file:
+                                label: Soubor
+                                type: mediafinder
+                                maxItems: 1

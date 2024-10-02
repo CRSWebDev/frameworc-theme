@@ -4,10 +4,10 @@ type: entry
 name: Záznamy z formulářů
 drafts: false
 
-primaryNavigation:
+navigation:
+    parent: Form
     label: Záznamy z formulářů
-    icon: icon-address-card
-    order: 112
+    order: 50
 
 fields:
     form:

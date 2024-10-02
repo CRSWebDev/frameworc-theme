@@ -8,7 +8,7 @@ multisite: true
 navigation:
     parent: Builder
     icon: icon-download
-    order: 10
+    order: 250
 
 fields:
     logo:
@@ -23,5 +23,35 @@ fields:
         source: Menu
 
     text:
-        label: Text na pravé straně patičky
+        label: Text patičky
         type: richeditor
+
+    socials:
+        type: repeater
+        label: Sociální sítě
+        form:
+            fields:
+                site:
+                    label: Síť
+                    type: dropdown
+                    span: left
+                    options:
+                        fb: Facebook
+                        ig: Instagram
+                        li: LinkedIN
+                        x: X
+                        yt: YouTube
+                        tt: TikTok
+                        wa: Whatsapp
+
+                url:
+                    type: text
+                    mode: url
+                    label: Odkaz
+                    span: right
+
+    stayInTouch:
+        label: Stay in touch - text
+
+    madeBy:
+        label: Made by - text

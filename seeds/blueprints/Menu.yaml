@@ -1,14 +1,20 @@
 uuid: 37b361f7-7758-440f-8cb2-e71fb82e6ea9
 handle: Menu
 type: entry
-name: Menus
+name: Menu na stránce
 drafts: false
 multisite: true
 
 navigation:
     parent: Builder
     icon: icon-bars
-    order: 10
+    order: 420
+
+extraNavigation:
+    _line_nav:
+        itemType: section
+        label: Šablony bloků
+        order: 410
 
 fields:
     navigation:

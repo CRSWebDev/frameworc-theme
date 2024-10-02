@@ -8,7 +8,7 @@ multisite: true
 navigation:
     parent: Builder
     icon: icon-cubes
-    order: 10
+    order: 430
 
 fields:
     _hint:

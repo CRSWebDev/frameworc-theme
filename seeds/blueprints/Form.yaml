@@ -5,14 +5,26 @@ name: Formuláře
 drafts: false
 multisite: true
 
+primaryNavigation:
+    label: Formuláře
+    icon: icon-address-card
+    order: 112
+
 navigation:
-    parent: Builder
+    parent: Form
     icon: icon-address-card
     order: 10
 
 fields:
     headline:
         label: Nadpis
+
+    recipients:
+        label: Příjemci mailů
+        comment: Zadejte emailovou adresu a stiskněte klávesu "enter". Můžete přidat více příjemců.
+        placeholder: admin@example.com
+        type: taglist
+        mode: array
 
     fwcFields:
         label: Pole formuláře

@@ -32,6 +32,11 @@ fields:
                                     label: Text
                                     type: richeditor
 
+                    gallery:
+                        label: Rozkliknutelná galerie
+                        type: switch
+                        tab: Nastavení
+
                     variant:
                         label: Varianta
                         type: dropdown
