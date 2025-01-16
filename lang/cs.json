@@ -22,5 +22,8 @@
     "blog.all_categories": "Všechny",
     "blog.no_posts": "Nic jsme nenašli",
     "blog.downloads_headline": "Soubory ke stažení",
-    "blog.gallery_headline": "Galerie"
+    "blog.gallery_headline": "Galerie",
+
+    "page.not_found": "Stránka nebyla nalezena",
+    "page.return_home": "Zkuste se vrátit zpět na <a href='/'>titulní stránku</a>"
 }

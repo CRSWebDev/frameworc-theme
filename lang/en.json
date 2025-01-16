@@ -22,5 +22,8 @@
     "blog.all_categories": "All",
     "blog.no_posts": "No posts found",
     "blog.downloads_headline": "Downloads",
-    "blog.gallery_headline": "Gallery"
+    "blog.gallery_headline": "Gallery",
+
+    "page.not_found": "Page not found",
+    "page.return_home": "Try returning back to <a href='/'>home page</a>"
 }
