@@ -15,7 +15,17 @@ fields:
                         label: Obrázek
                         type: mediafinder
                         mode: image
+                        maxItems: 1
                         tab: Obsah
+                        span: left
+
+                    imageMobile:
+                        label: Obrázek na mobilu
+                        type: mediafinder
+                        mode: image
+                        maxItems: 1
+                        tab: Obsah
+                        span: right
 
                     buttons:
                         tab: Obsah

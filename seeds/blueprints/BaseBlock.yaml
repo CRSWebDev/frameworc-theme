@@ -60,6 +60,20 @@ fields:
             field: backgroundColor
             condition: value[image]
 
+    backgroundImageMobile:
+        label: Obrázek pozadí na mobilu
+        comment: Obrázek pozadí bloku na mobilu
+        type: mediafinder
+        mode: image
+        tab: Vzhled bloku
+        span: right
+        maxItems: 1
+        dependsOn: backgroundColor
+        trigger:
+            action: show
+            field: backgroundColor
+            condition: value[image]
+
     customCssClass:
         label: Vlastní CSS třída
         comment: Můžete zadat více tříd oddělených mezerou. Použije se pro vlastní stylování bloku. Pokud potřebujete vytvořit vlastní šablonu pro blok, použijte alias pro blok.
