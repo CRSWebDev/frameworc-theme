@@ -5,8 +5,8 @@
     "license": "MIT",
     "require": {
         "composer/installers": "~1.0",
-        "october/rain": "~v3.5",
-        "crs-company/frameworc-plugin": "~v1.1.0",
+        "october/rain": "~v3.7",
+        "crs-company/frameworc-plugin": "~v1.2.0",
         "crs-company/tailordataexport-plugin": "^v1.0.2",
         "crs-company/frameworcutils-plugin": "~v0.1.2"
     }
