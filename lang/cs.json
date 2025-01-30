@@ -7,6 +7,7 @@
     "form.email_backend_subject": "Nová zpráva z webu",
     "form.email_client_subject": "Děkujeme za vyplnění formuláře",
     "form.email_thank_you": "Děkujeme za vyplnění formuláře",
+    "form.submit": "Odeslat",
 
     "form.captcha.ariaLinkLabel": "Používáme Altcha pro ochranu proti spamu.",
     "form.captcha.error": "Chyba při ověřování captcha. Zkuste to prosím znovu.",

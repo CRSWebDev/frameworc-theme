@@ -7,6 +7,7 @@
     "form.email_backend_subject": "New message from website",
     "form.email_client_subject": "Thank you for your response",
     "form.email_thank_you": "Thank you for your response",
+    "form.submit": "Submit",
 
     "form.captcha.ariaLinkLabel": "We use Altcha to protect against spam.",
     "form.captcha.error": "Verification failed. Please try again.",
