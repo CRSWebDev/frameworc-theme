@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Main Menu",
+        "navigation": [
+            {
+                "title": "Úvod",
+                "url": "\/",
+                "blank": "0",
+                "id": 1,
+                "parent_id": null,
+                "sort_order": 1
+            }
+        ]
+    }
+]

@@ -1,0 +1,39 @@
+-
+  name: Main Menu
+  class: Tailor\Models\RecordImport
+  file: seeds/data/main-menu.json
+  attributes:
+      file_format: json
+      blueprint_uuid: 37b361f7-7758-440f-8cb2-e71fb82e6ea9
+
+-
+  name: Navigation
+  class: Tailor\Models\RecordImport
+  file: seeds/data/navigation.json
+  attributes:
+      file_format: json
+      blueprint_uuid: 6a4f4175-fd60-4ac2-a429-2f0bc411f0be
+
+-
+  name: Footer
+  class: Tailor\Models\RecordImport
+  file: seeds/data/footer.json
+  attributes:
+      file_format: json
+      blueprint_uuid: 9090b793-aec8-482e-94b6-8ba8b9ebecb7
+
+-
+  name: Homepage
+  class: Tailor\Models\RecordImport
+  file: seeds/data/homepage.json
+  attributes:
+      file_format: json
+      blueprint_uuid: b340635e-2eea-44de-82a2-ea08c5d48d31
+
+-
+  name: Meta & SEO
+  class: Tailor\Models\RecordImport
+  file: seeds/data/metaseo.json
+  attributes:
+      file_format: json
+      blueprint_uuid: 41c5539c-ffbb-4e20-b0e8-55bcfab073e1

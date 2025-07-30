@@ -20,3 +20,4 @@ v1.2.0: Responsive updates, QOL updates, fixes
 v1.2.1: Updated seeds
 v1.2.2: Updated dependencies
 v1.2.3: Updated dependencies, fixes for lang in form component
+v1.3.0: Added seeds for main menu, navigation, footer, homepage, meta & seo, bumped OctoberCMS version
