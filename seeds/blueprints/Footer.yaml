@@ -56,3 +56,12 @@ fields:
 
     madeBy:
         label: Made by - text
+
+    _newsletterSection:
+        label: Newsletter
+        type: section
+
+    showNewsletterForm:
+        label: Zobrazit formulář pro přihlášení k odběru novinek
+        type: switch
+        default: false
