@@ -2,8 +2,23 @@ uuid: edfc7e43-df96-4264-8734-a63bfc2d05fe
 handle: Blocks/Form
 type: mixin
 name: Formulář
+slug: hidden
 
 fields:
+    form:
+        label: Formulář
+        tab: Blok
+        type: entries
+        source: Form
+        maxItems: 1
+        displayMode: controller
+        toolbarButtons: create|add|remove|update
+        controller:
+            columns: [
+                'title'
+            ]
+
+
     content:
         type: nestedform
         showPanel: false
@@ -11,13 +26,7 @@ fields:
         form:
             tabs:
                 fields:
-                    form:
-                        label: Formulář
-                        tab: Obsah
-                        type: entries
-                        source: Form
-                        displayMode: recordfinder
-                        maxItems: 1
+                    
 
                     variant:
                         label: Variante zobrazení

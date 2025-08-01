@@ -26,5 +26,13 @@
     "blog.gallery_headline": "Galerie",
 
     "page.not_found": "Stránka nebyla nalezena",
-    "page.return_home": "Zkuste se vrátit zpět na <a href='/'>titulní stránku</a>"
+    "page.return_home": "Zkuste se vrátit zpět na <a href='/'>titulní stránku</a>",
+
+    "footer.newsletter.title": "Přihlásit se k odběru newsletteru",
+    "footer.newsletter.text": "Získejte nejnovější novinky a aktuality.",
+    "footer.newsletter.email_label": "E-mail",
+    "footer.newsletter.email_placeholder": "Zadejte svůj e-mail",
+    "footer.newsletter.subscribe_button": "Přihlásit se",
+    "footer.newsletter.success": "Odeslali jsme vám odkaz pro potvrzení odběru.",
+    "footer.newsletter.error": "Něco se pokazilo. Zkuste to prosím znovu."
 }

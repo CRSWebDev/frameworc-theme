@@ -19,8 +19,9 @@ fields:
     nav:
         type: entries
         label: Navigace
-        maxItems: 1
         source: Menu
+        displayMode: controller
+        validation: 'array|max:1'
 
     text:
         label: Text patičky

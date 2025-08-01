@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "title": "Navigation",
-        "nav_id": 1
+        "title": "Footer",
+        "nav_id": 1,
+        "slug": "Footer"
     }
 ]

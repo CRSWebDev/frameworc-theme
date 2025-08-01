@@ -10,6 +10,11 @@ navigation:
     order: 50
 
 fields:
+    slug:
+        hidden: true
+        required: false
+        validation: false
+        
     form:
         label: Formulář
         type: entries

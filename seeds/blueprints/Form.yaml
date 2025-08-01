@@ -25,6 +25,7 @@ fields:
         placeholder: admin@example.com
         type: taglist
         mode: array
+        customTags: true
 
     fwcFields:
         label: Pole formuláře

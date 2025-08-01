@@ -22,6 +22,22 @@ fields:
         tab: Obsah
         source: Mixins/Builder
 
+    metaTitle:
+        label: Meta titulek
+        tab: SEO
+
+    metaDescription:
+        label: Meta popisek
+        type: textarea
+        tab: SEO
+
+    ogImage:
+        label: OG Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+        tab: SEO
+
     menuStyle:
         label: Varianta horního menu
         type: dropdown

@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Meta & SEO",
-        "blogBasePath": "blog"
+        "blogBasePath": "blog",
+        "slug": "meta-seo"
     }
 ]

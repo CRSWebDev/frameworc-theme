@@ -26,5 +26,13 @@
     "blog.gallery_headline": "Gallery",
 
     "page.not_found": "Page not found",
-    "page.return_home": "Try returning back to <a href='/'>home page</a>"
+    "page.return_home": "Try returning back to <a href='/'>home page</a>",
+
+    "footer.newsletter.title": "Subscribe to our newsletter",
+    "footer.newsletter.text": "Get the latest news and updates from our team.",
+    "footer.newsletter.email_label": "Email",
+    "footer.newsletter.email_placeholder": "Enter your email address",
+    "footer.newsletter.subscribe_button": "Subscribe",
+    "footer.newsletter.success": "We have sent you a link to confirm your subscription.",
+    "footer.newsletter.error": "Something went wrong. Please try again."
 }

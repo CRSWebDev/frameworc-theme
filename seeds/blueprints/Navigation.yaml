@@ -1,7 +1,7 @@
 uuid: 6a4f4175-fd60-4ac2-a429-2f0bc411f0be
 handle: Navigation
 type: single
-name: Navigace (hlavička stránky)
+name: Navbar
 drafts: false
 multisite: true
 
@@ -30,8 +30,10 @@ fields:
     nav:
         type: entries
         label: Navigace
-        maxItems: 1
         source: Menu
+        displayMode: controller
+        toolbarButtons: add|remove|create
+        validation: 'array|max:1'
 
     extraNavLabel:
         label: Text zvýrazněného tlačítka

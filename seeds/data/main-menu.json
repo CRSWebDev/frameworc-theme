@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Main Menu",
+        "slug": "main-menu",
         "navigation": [
             {
                 "title": "Úvod",

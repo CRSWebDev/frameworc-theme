@@ -36,6 +36,67 @@ fields:
                         source: Mixins/Buttons
                         tab: Obsah
 
+                    headline2:
+                        type: richeditor
+                        label: Druhý sloupec textu
+                        tab: Obsah
+                        trigger:
+                            action: show
+                            field: doubleText
+                            condition: checked
+
+                    _button3Section:
+                        type: section
+                        label: Tlačítko 3
+                        tab: Obsah
+                        trigger:
+                            action: show
+                            field: doubleText
+                            condition: checked
+                    buttonLabel3:
+                        label: Text tlačítka
+                        span: left
+                        tab: Obsah
+                        trigger:
+                            action: show
+                            field: doubleText
+                            condition: checked
+                    buttonLink3:
+                        label: Odkaz tlačítka
+                        type: pagefinder
+                        span: right
+                        tab: Obsah
+                        trigger:
+                            action: show
+                            field: doubleText
+                            condition: checked
+
+                    _button4Section:
+                        type: section
+                        label: Tlačítko 4
+                        tab: Obsah
+                        trigger:
+                            action: show
+                            field: doubleText
+                            condition: checked
+                    buttonLabel4:
+                        label: Text tlačítka
+                        span: left
+                        tab: Obsah
+                        trigger:
+                            action: show
+                            field: doubleText
+                            condition: checked
+                    buttonLink4:
+                        label: Odkaz tlačítka
+                        type: pagefinder
+                        span: right
+                        tab: Obsah
+                        trigger:
+                            action: show
+                            field: doubleText
+                            condition: checked
+
 
                     # Settings #
 
@@ -48,6 +109,12 @@ fields:
                             variant1: Varianta 1
                             variant2: Varianta 2
                             variant3: Varianta s embed prvkem
+
+                    doubleText:
+                        label: Dva sloupce textu (bez obrázku)
+                        type: switch
+                        default: false
+                        tab: Nastavení
 
                     reverse:
                         label: Obrázek vlevo, text vpravo

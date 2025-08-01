@@ -76,12 +76,25 @@ fields:
 
     customCssClass:
         label: Vlastní CSS třída
-        comment: Můžete zadat více tříd oddělených mezerou. Použije se pro vlastní stylování bloku. Pokud potřebujete vytvořit vlastní šablonu pro blok, použijte alias pro blok.
-        type: text
+        comment: Můžete zadat více tříd stisknutím klávesy "Enter".
+        type: taglist
         tab: Pokročilé nastavení
+        customTags: true
+        options:
+            smallSpacing: Builder-container--smallSpacing
+            noSpacing: Builder-container--noSpacing
 
     aliasOverride:
         label: Vlastní alias
         comment: Přepíše defaultní alias pro blok. Používá se k vytvoření extra šablony v tématu a vlastnímu stylování konkrétního bloku. Pokud nevíte, co "alias pro blok" znamená, nechte prázdné.
         type: text
         tab: Pokročilé nastavení
+
+    responsiveHide:
+        label: Skrýt na
+        type: checkboxlist
+        tab: Vzhled bloku
+        options: 
+            desktop: Desktopu
+            tablet: Tabletu
+            mobile: Mobilu
