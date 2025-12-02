@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Navbar",
-        "nav_id": 1,
+        "nav": 1,
         "slug": "Navbar"
     }
 ]

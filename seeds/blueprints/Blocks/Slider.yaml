@@ -36,6 +36,16 @@ fields:
                         label: Rozkliknutelná galerie
                         type: switch
                         tab: Nastavení
+                    
+                    loop:
+                        label: Přehrávat ve smyčce
+                        type: switch
+                        tab: Nastavení
+
+                    autoWidth:
+                        label: Šířka slidů přizpůsobená velikosti obrázkům (nepravidelně široké slidy)
+                        type: switch
+                        tab: Nastavení
 
                     variant:
                         label: Varianta
@@ -83,17 +93,6 @@ fields:
                         comment: Slidery by měly mít stejný počet slidů
                         tab: Nastavení
                         span: left
-
-                    syncTranslate:
-                        label: Synchronizovat plynule tažení slideru
-                        type: switch
-                        tab: Nastavení
-                        span: right
-
-                    loop:
-                        label: Přehrávat ve smyčce
-                        type: switch
-                        tab: Nastavení
 
                     autoplay:
                         label: Přehrávat automaticky v intervalu

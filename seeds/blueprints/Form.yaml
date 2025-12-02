@@ -24,8 +24,9 @@ fields:
         comment: Zadejte emailovou adresu a stiskněte klávesu "enter". Můžete přidat více příjemců.
         placeholder: admin@example.com
         type: taglist
-        mode: array
         customTags: true
+        mode: array
+        useKey: false
 
     fwcFields:
         label: Pole formuláře

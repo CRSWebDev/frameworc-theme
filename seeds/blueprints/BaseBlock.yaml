@@ -76,13 +76,26 @@ fields:
 
     customCssClass:
         label: Vlastní CSS třída
+        commentAbove: 'Krátký název bez diakrity a mezer. Při generování kódu  bude třída vypadat následovně: Builder-container--<myClass>'
         comment: Můžete zadat více tříd stisknutím klávesy "Enter".
         type: taglist
         tab: Pokročilé nastavení
         customTags: true
+        mode: array
+        useKey: false
         options:
-            smallSpacing: Builder-container--smallSpacing
-            noSpacing: Builder-container--noSpacing
+            - noSpacing
+            - narrowSpacing
+            - animate
+
+    _cssClasses:
+        label: Předpřipravané CSS třídy
+        type: hint
+        comment: |
+            'animate: přidá jednoduché animace při scrollování'
+        mode: hint
+        commentHtml: true
+        tab: Pokročilé nastavení
 
     aliasOverride:
         label: Vlastní alias

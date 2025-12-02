@@ -41,6 +41,12 @@ fields:
         type: pagefinder
         label: Odkaz zvýrazněného tlačítka
 
+    extraNavLabel2:
+        label: Text druhého zvýrazněného tlačítka
+    extraNavLink2:
+        type: pagefinder
+        label: Odkaz druhého zvýrazněného tlačítka
+
     _sectionInfobar:
         label: Informační lišta
         type: section

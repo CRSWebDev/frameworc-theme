@@ -55,8 +55,8 @@ fields:
                         source: Blocks/Tiles
 
             Slider:
-                name: Slider & Tabs
-                description: Slider & Tabs
+                name: Slider
+                description: Slider
                 titleFrom: blockId
                 useTabs: true
                 icon: icon-exchange
@@ -68,6 +68,21 @@ fields:
                     content:
                         type: mixin
                         source: Blocks/Slider
+
+            Tabs:
+                name: Taby
+                description: Taby
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-window-restore
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/Tabs
 
             Accordion:
                 name: Akordeon

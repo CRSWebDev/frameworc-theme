@@ -6,9 +6,9 @@
     "require": {
         "composer/installers": "~1.0",
         "october/rain": "~v4.0",
-        "crs-company/frameworc-plugin": "~v1.3.1",
+        "crs-company/frameworc-plugin": "~v1.4.0",
         "crs-company/tailordataexport-plugin": "^v1.0.3",
-        "crs-company/frameworcutils-plugin": "~v1.2.0",
+        "crs-company/frameworcutils-plugin": "~v1.3.0",
         "crs-company/backster-plugin": "~v1.0.0"
     }
 }

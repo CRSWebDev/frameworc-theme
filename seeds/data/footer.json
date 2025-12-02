@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Footer",
-        "nav_id": 1,
+        "nav": 1,
         "slug": "Footer"
     }
 ]
