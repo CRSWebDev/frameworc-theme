@@ -27,6 +27,13 @@ fields:
                         tab: Obsah
                         span: right
 
+                    isVideoBg:
+                        label: Video na pozadí
+                        type: switch
+                        default: false
+                        tab: Obsah
+                        comment: Použijte pole "Obrázek" jako video a "Obrázek na mobilu" jako poster
+
                     buttons:
                         tab: Obsah
                         type: mixin

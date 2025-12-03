@@ -84,15 +84,21 @@ fields:
         mode: array
         useKey: false
         options:
-            - noSpacing
-            - narrowSpacing
             - animate
+            - noSpacing
+            - noSpacingTop
+            - noSpacingBottom
+            - narrowSpacing
+            - centerButtons
 
     _cssClasses:
         label: Předpřipravané CSS třídy
         type: hint
-        comment: |
-            'animate: přidá jednoduché animace při scrollování'
+        comment: "animate: přidá jednoduché animace při scrollování<br>
+            noSpacing: sekce nemá odsazení od ostatních sekcí<br>
+            noSpacingBottom / noSpacingTop: sekce nemá odsazení zdola/shora<br>
+            narrowSpacing: menší odsazení od ostatních sekcí<br>
+            centerButtons: tlačítka jsou umístěné uprostřed"
         mode: hint
         commentHtml: true
         tab: Pokročilé nastavení
