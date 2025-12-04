@@ -30,6 +30,10 @@ fields:
                 url:
                     label: Položka navigace
                     type: pagefinder
+                anchor:
+                    label: Odkaz je kotva (nepřeměrovává na jinou stránku)
+                    type: switch
+                    span: left
                 blank:
                     label: Otevřít v novém okně
                     type: switch
