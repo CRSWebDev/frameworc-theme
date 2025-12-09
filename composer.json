@@ -9,6 +9,7 @@
         "crs-company/frameworc-plugin": "~v1.4.1",
         "crs-company/tailordataexport-plugin": "^v1.0.3",
         "crs-company/frameworcutils-plugin": "~v1.3.0",
-        "crs-company/backster-plugin": "~v1.0.0"
+        "crs-company/backster-plugin": "~v1.0.0",
+        "crs-company/popup-plugin": "~v1.0.2"
     }
 }
