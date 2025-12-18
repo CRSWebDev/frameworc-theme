@@ -17,6 +17,11 @@ fields:
     buttonContrast1:
         label: Kontrastní text
         type: switch
+        span: left
+    buttonBlank1:
+        label: Otevřít v novém okně
+        type: switch
+        span: right
     buttonOutline1:
         label: Obtáhnuté tlačítko
         type: switch
@@ -34,6 +39,11 @@ fields:
     buttonContrast2:
         label: Kontrastní text
         type: switch
+        span: left
+    buttonBlank2:
+        label: Otevřít v novém okně
+        type: switch
+        span: right
     buttonOutline2:
         label: Obtáhnuté tlačítko
         type: switch

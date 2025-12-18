@@ -46,6 +46,8 @@ fields:
             accent: Akcentní barva (polotmavá)
             contrast: Kontrastní barva (tmavá)
             image: Obrázek
+            containerAccent: Kontejner - akcentní barva (polotmavá)
+            containerContrast: Kontejner - kontrastní barva (tmavá)
 
     backgroundImage:
         label: Obrázek pozadí

@@ -37,3 +37,4 @@ fields:
                 blank:
                     label: Otevřít v novém okně
                     type: switch
+                    span: right

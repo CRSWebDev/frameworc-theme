@@ -45,3 +45,11 @@ fields:
         options:
             solid: Neprůhledné
             transparent: Transparentní
+
+    menuHide:
+        label: Skrývání horního menu
+        type: dropdown
+        tab: Nastavení
+        options:
+            yes: Ano
+            no: Ne

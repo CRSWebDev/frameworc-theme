@@ -35,10 +35,17 @@ fields:
                                 linkText:
                                     label: Text odkazu
                                     comment: Při použití celé dlaždice jako odkaz se nevypisuje
+                                    span: left
 
                                 linkUrl:
                                     label: Odkaz
                                     type: pagefinder
+                                    span: right
+
+                                linkBlank:
+                                    label: Otevřít v novém okně
+                                    type: switch
+                                    span: right
 
                     tileLink:
                         label: Dlaždice jako odkaz
