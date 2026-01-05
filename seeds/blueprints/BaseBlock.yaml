@@ -48,6 +48,7 @@ fields:
             image: Obrázek
             containerAccent: Kontejner - akcentní barva (polotmavá)
             containerContrast: Kontejner - kontrastní barva (tmavá)
+            containerImage: Kontejner - obrázek
 
     backgroundImage:
         label: Obrázek pozadí
@@ -60,7 +61,7 @@ fields:
         trigger:
             action: show
             field: backgroundColor
-            condition: value[image]
+            condition: value[image][containerImage]
 
     backgroundImageMobile:
         label: Obrázek pozadí na mobilu
@@ -74,7 +75,7 @@ fields:
         trigger:
             action: show
             field: backgroundColor
-            condition: value[image]
+            condition: value[image][containerImage]
 
     customCssClass:
         label: Vlastní CSS třída
