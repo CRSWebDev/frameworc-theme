@@ -218,3 +218,18 @@ fields:
                     content:
                         type: mixin
                         source: Blocks/ImageStrip
+
+            InstaFeed:
+                name: Instagram Feed
+                description: Instagram Feed
+                titleFrom: blockId
+                useTabs: true
+                icon: icon-barcode
+                fields:
+                    base:
+                        type: mixin
+                        source: BaseBlock
+
+                    content:
+                        type: mixin
+                        source: Blocks/InstaFeed
