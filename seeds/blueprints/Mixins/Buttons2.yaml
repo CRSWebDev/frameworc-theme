@@ -1,16 +1,16 @@
-uuid: 830522f2-ca0b-40c0-85ba-402ff4bea1b3
-handle: Mixins/Buttons
+uuid: e79ff03e-0075-4838-97a8-727e25472770
+handle: Mixins/Buttons2
 type: mixin
 name: Tlačítka
 
 fields:
-    _button1Section:
+    _button3Section:
         type: section
-        label: Tlačítko 1
-    buttonLabel1:
+        label: Tlačítko 3
+    buttonLabel3:
         label: Text tlačítka
         span: left
-    buttonVariant1:
+    buttonVariant3:
         label: Varianta tlačítka
         type: dropdown
         span: right
@@ -20,31 +20,31 @@ fields:
             blurLight: Zamlžené světlé
             blurDark: Zamlžené tmavé
             plain: Bez dekorace
-    buttonContrast1:
+    buttonContrast3:
         label: Kontrastní varianta
         type: switch
         span: right
-    buttonLink1:
+    buttonLink3:
         label: Odkaz tlačítka
         type: pagefinder
         span: left
-    buttonIcon1:
+    buttonIcon3:
         label: Ikonka v tlačítku
         type: mediafinder
         maxItems: 1
         span: right
-    buttonBlank1:
+    buttonBlank3:
         label: Otevřít v novém okně
         type: switch
         span: left
 
-    _button2Section:
+    _button4Section:
         type: section
-        label: Tlačítko 2
-    buttonLabel2:
+        label: Tlačítko 4
+    buttonLabel4:
         label: Text tlačítka
         span: left
-    buttonVariant2:
+    buttonVariant4:
         label: Varianta tlačítka
         type: dropdown
         span: right
@@ -54,20 +54,20 @@ fields:
             blurLight: Zamlžené světlé
             blurDark: Zamlžené tmavé
             plain: Bez dekorace
-    buttonContrast2:
+    buttonContrast4:
         label: Kontrastní varianta
         type: switch
         span: right
-    buttonLink2:
+    buttonLink4:
         label: Odkaz tlačítka
         type: pagefinder
         span: left
-    buttonIcon2:
+    buttonIcon4:
         label: Ikonka v tlačítku
         type: mediafinder
         maxItems: 1
         span: right
-    buttonBlank2:
+    buttonBlank4:
         label: Otevřít v novém okně
         type: switch
         span: left

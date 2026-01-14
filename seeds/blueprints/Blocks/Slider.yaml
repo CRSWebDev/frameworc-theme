@@ -32,6 +32,11 @@ fields:
                                     label: Text
                                     type: richeditor
 
+                                buttons:
+                                    type: mixin
+                                    source: Mixins/Buttons
+                                    tab: Obsah
+
                     gallery:
                         label: Rozkliknutelná galerie
                         type: switch

@@ -65,6 +65,15 @@ fields:
                         source: Mixins/Buttons
                         tab: Obsah
 
+                    _section2:
+                        type: section
+                        label: Druhý sloupec
+                        tab: Obsah
+                        trigger:
+                            action: show
+                            field: variant
+                            condition: value[textAndText]
+
                     headline2:
                         type: richeditor
                         label: Druhý sloupec textu
@@ -74,69 +83,14 @@ fields:
                             field: variant
                             condition: value[textAndText]
 
-                    _button3Section:
-                        type: section
-                        label: Tlačítko 3
+                    buttons2:
+                        type: mixin
+                        source: Mixins/Buttons2
                         tab: Obsah
                         trigger:
                             action: show
                             field: variant
                             condition: value[textAndText]
-                    buttonLabel3:
-                        label: Text tlačítka
-                        span: left
-                        tab: Obsah
-                        trigger:
-                            action: show
-                            field: variant
-                            condition: value[textAndText]
-                    buttonLink3:
-                        label: Odkaz tlačítka
-                        type: pagefinder
-                        span: right
-                        tab: Obsah
-                        trigger:
-                            action: show
-                            field: variant
-                            condition: value[textAndText]
-
-                    buttonBlank3:
-                        label: Otevřít v novém okně
-                        type: switch
-                        span: right
-                        tab: Obsah
-
-                    _button4Section:
-                        type: section
-                        label: Tlačítko 4
-                        tab: Obsah
-                        trigger:
-                            action: show
-                            field: variant
-                            condition: value[textAndText]
-                    buttonLabel4:
-                        label: Text tlačítka
-                        span: left
-                        tab: Obsah
-                        trigger:
-                            action: show
-                            field: variant
-                            condition: value[textAndText]
-                    buttonLink4:
-                        label: Odkaz tlačítka
-                        type: pagefinder
-                        span: right
-                        tab: Obsah
-                        trigger:
-                            action: show
-                            field: variant
-                            condition: value[textAndText]
-
-                    buttonBlank4:
-                        label: Otevřít v novém okně
-                        type: switch
-                        span: right
-                        tab: Obsah
 
 
                     # Settings #
