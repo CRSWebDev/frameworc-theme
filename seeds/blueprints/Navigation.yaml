@@ -35,17 +35,9 @@ fields:
         toolbarButtons: add|remove|create
         validation: 'array|max:1'
 
-    extraNavLabel:
-        label: Text zvýrazněného tlačítka
-    extraNavLink:
-        type: pagefinder
-        label: Odkaz zvýrazněného tlačítka
-
-    extraNavLabel2:
-        label: Text druhého zvýrazněného tlačítka
-    extraNavLink2:
-        type: pagefinder
-        label: Odkaz druhého zvýrazněného tlačítka
+    buttons:
+        type: mixin
+        source: Mixins/Buttons
 
     _sectionInfobar:
         label: Informační lišta
