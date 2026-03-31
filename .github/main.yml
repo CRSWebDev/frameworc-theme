@@ -1,0 +1,98 @@
+name: Stage Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      BASE: ~/htdocs/frameworc.crs-stage.com
+      BUILD_NUMBER: ${{ github.run_number }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Backup public
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: 22
+          script_stop: true
+          timeout: 30s
+          command_timeout: 10m
+          script: |
+            set -e
+            RELEASES="$BASE/releases"
+            BACKUPS="$BASE/backups"
+            PUBLIC="$BASE/public"
+            mkdir -p "$RELEASES" "$BACKUPS"
+            if [ -d "$PUBLIC" ]; then
+              BACKUP="$BACKUPS/backup_${BUILD_NUMBER}.tar.gz"
+              tar -czf "$BACKUP" --exclude=storage -C "$PUBLIC" .
+              ls -1t "$BACKUPS"/backup_*.tar.gz 2>/dev/null | tail -n +6 | xargs -r rm -f
+            fi
+
+      - name: Upload files to release directory
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: 22
+          source: "app/,bootstrap/,config/,modules/,plugins/,themes/,artisan,composer.json,composer.lock,robots.txt,index.php"
+          target: "~/htdocs/frameworc.crs-stage.com/releases/${{ github.run_number }}"
+
+      - name: Upload files to public directory
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: 22
+          source: "app/,bootstrap/,config/,modules/,plugins/,themes/,artisan,composer.json,composer.lock,robots.txt,index.php"
+          target: "~/htdocs/frameworc.crs-stage.com/public"
+
+      - name: Post-deploy
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: 22
+          script_stop: true
+          timeout: 30s
+          command_timeout: 10m
+          script: |
+            set -e
+            cd ~/htdocs/frameworc.crs-stage.com/public
+            php8.4 $(which composer) install --no-interaction --no-dev
+            php8.4 artisan october:migrate
+            php8.4 artisan cache:clear
+
+      - name: Cleanup releases
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: 22
+          script_stop: true
+          timeout: 30s
+          command_timeout: 10m
+          script: |
+            set -e
+            RELEASES="$BASE/releases"
+            RELEASE="$RELEASES/${BUILD_NUMBER}"
+            if [ ! -d "$RELEASE" ]; then echo "Release not found: $RELEASE"; exit 1; fi
+            TARBALL="$RELEASES/release_${BUILD_NUMBER}.tar.gz"
+            tar -czf "$TARBALL" -C "$RELEASE" .
+            rm -rf "$RELEASE"
+            ls -1t "$RELEASES"/release_*.tar.gz 2>/dev/null | tail -n +6 | xargs -r rm -f
+            ls -1dt "$RELEASES"/*/ 2>/dev/null | tail -n +6 | xargs -r rm -rf
