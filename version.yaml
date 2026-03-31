@@ -33,3 +33,4 @@ v1.7.0: Unified buttons definitions, updated seeds
 v1.7.1: Navigation changes, fixes to buttons, updated seeds
 v1.8.0: Moved blueprints to plugin
 v1.8.1: Bump dependency fwc utils
+v1.9.0: Bump FWC plugin dependency
