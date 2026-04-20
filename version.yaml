@@ -34,3 +34,4 @@ v1.7.1: Navigation changes, fixes to buttons, updated seeds
 v1.8.0: Moved blueprints to plugin
 v1.8.1: Bump dependency fwc utils
 v1.9.0: Bump FWC plugin dependency
+v1.9.1: Enable new way of Turbo router
