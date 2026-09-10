@@ -36,3 +36,4 @@ v1.8.1: Bump dependency fwc utils
 v1.9.0: Bump FWC plugin dependency
 v1.9.1: Enable new way of Turbo router
 v1.10.0: Add FrameworC MCP plugin dependency (AI page building API)
+v1.10.1: Fix homepage route to match plugin slug handling, bump FWC plugin dependency
