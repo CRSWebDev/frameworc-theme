@@ -8,6 +8,8 @@
     "form.email_client_subject": "Děkujeme za vyplnění formuláře",
     "form.email_thank_you": "Děkujeme za vyplnění formuláře",
     "form.submit": "Odeslat",
+    "form.more_info": "Více informací",
+    "gallery.load_more": "Načíst další",
 
     "form.captcha.ariaLinkLabel": "Používáme Altcha pro ochranu proti spamu.",
     "form.captcha.error": "Chyba při ověřování captcha. Zkuste to prosím znovu.",

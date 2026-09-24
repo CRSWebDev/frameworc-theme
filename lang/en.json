@@ -8,6 +8,8 @@
     "form.email_client_subject": "Thank you for your response",
     "form.email_thank_you": "Thank you for your response",
     "form.submit": "Submit",
+    "form.more_info": "More information",
+    "gallery.load_more": "Load more",
 
     "form.captcha.ariaLinkLabel": "We use Altcha to protect against spam.",
     "form.captcha.error": "Verification failed. Please try again.",
