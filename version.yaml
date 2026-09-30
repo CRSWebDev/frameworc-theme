@@ -39,4 +39,4 @@ v1.10.0: Add FrameworC MCP plugin dependency (AI page building API)
 v1.10.1: Fix homepage route to match plugin slug handling, bump FWC plugin dependency
 v1.10.2: Bump FrameworCUtils plugin dependency (backend migration runner)
 v1.11.0: Require FrameworC plugin v1.10 (global and per-site SCSS) and MCP plugin v1.3, translation keys for gallery load more and form more info
-v1.11.1: Remove Tailor data export plugin dependency (deprecated)
+v1.11.1: Remove Tailor data export and Backster plugin dependencies (deprecated)
