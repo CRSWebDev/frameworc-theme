@@ -19,6 +19,9 @@
     "form.captcha.verified": "Verified successfully.",
     "form.captcha.verifying": "Verifying...",
     "form.captcha.waitAlert": "Please wait for the verification to complete.",
+    "Too many submissions, please try again later.": "Too many submissions, please try again later.",
+    "The uploaded file is not valid": "The uploaded file is not valid",
+    "Too many files were uploaded": "Too many files were uploaded",
 
     "blog.load_more": "Load more",
     "blog.read_more": "Read more",

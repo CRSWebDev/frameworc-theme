@@ -19,6 +19,9 @@
     "form.captcha.verified": "Ověření proti spamu proběhlo úspěšně.",
     "form.captcha.verifying": "Ověřuji...",
     "form.captcha.waitAlert": "Počkejte prosím, dokud se ověření neprovede.",
+    "Too many submissions, please try again later.": "Příliš mnoho odeslání, zkuste to prosím později.",
+    "The uploaded file is not valid": "Nahraný soubor není platný",
+    "Too many files were uploaded": "Bylo nahráno příliš mnoho souborů",
 
     "blog.load_more": "Načíst další",
     "blog.read_more": "Číst dále",
