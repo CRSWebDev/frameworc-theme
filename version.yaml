@@ -41,3 +41,4 @@ v1.10.2: Bump FrameworCUtils plugin dependency (backend migration runner)
 v1.11.0: Require FrameworC plugin v1.10 (global and per-site SCSS) and MCP plugin v1.3, translation keys for gallery load more and form more info
 v1.11.1: Remove Tailor data export and Backster plugin dependencies (deprecated)
 v1.12.0: Require FrameworC plugin v1.11 (form submissions on October 4.4)
+v1.13.0: Require FrameworC plugin v1.13 (JSON-LD structured data) and MCP plugin v1.4
